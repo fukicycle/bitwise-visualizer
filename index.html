@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BitWise Visualizer | ビット・バイト・エンディアン可視化ツール</title>
+    <meta
+      name="description"
+      content="数値がメモリ内でどう保存されるかを、ビット・バイト・エンディアン単位で可視化できる学習向けツールです。"
+    />
+    <meta name="keywords" content="ビット, バイト, エンディアン, little endian, big endian, メモリ可視化, コンピュータ基礎" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0d1117" />
+    <link rel="canonical" href="https://fukicycle.github.io/bitwise-visualizer/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="BitWise Visualizer" />
+    <meta property="og:title" content="BitWise Visualizer | ビット・バイト・エンディアン可視化ツール" />
+    <meta
+      property="og:description"
+      content="数値がメモリ内でどう保存されるかを、ビット・バイト・エンディアン単位で可視化できる学習向けツールです。"
+    />
+    <meta property="og:url" content="https://fukicycle.github.io/bitwise-visualizer/" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BitWise Visualizer | ビット・バイト・エンディアン可視化ツール" />
+    <meta
+      name="twitter:description"
+      content="数値がメモリ内でどう保存されるかを、ビット・バイト・エンディアン単位で可視化できる学習向けツールです。"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "BitWise Visualizer",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Any",
+        "inLanguage": "ja",
+        "url": "https://fukicycle.github.io/bitwise-visualizer/",
+        "description": "数値がメモリ内でどう保存されるかを、ビット・バイト・エンディアン単位で可視化できる学習向けツールです。"
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gray: {
+                750: '#2d3748',
+                850: '#1a202c',
+                950: '#0d1117',
+              },
+              cyan: {
+                450: '#00a8e8',
+              }
+            },
+            fontFamily: {
+              sans: ['"Hiragino Kaku Gothic ProN"', '"Hiragino Sans"', '"Meiryo"', 'sans-serif'],
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+            }
+          },
+        },
+      }
+    </script>
+      </head>
+  <body class="bg-gray-950 text-white antialiased selection:bg-cyan-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
